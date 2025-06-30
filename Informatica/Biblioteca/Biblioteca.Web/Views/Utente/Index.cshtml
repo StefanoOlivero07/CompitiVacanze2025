@@ -1,0 +1,14 @@
+﻿@using Biblioteca.Core.Models;
+@model List<Utente>
+
+<h1 class="text-center text-danger">Elenco utenti</h1>
+
+<ul>
+    @foreach (var utente in Model)
+    {
+        // Uso l'override di ToString della classe Utente
+        <li>@utente</li>
+    }
+</ul>
+
+<a class="btn btn-danger" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house"></i></a>
